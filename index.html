@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css kustom -->
+    <link rel="stylesheet" href="main.css">
+    <!-- css bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>UMKMBANGETNIH</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-1 fixed-top">
+        <div class="container">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a href="index.html" class="navbar-brand d-flex justify-content-between align-items-center order-lg-0">
+                <img src="aset/typography_style_logo_for_Piring_Nusantara_a_.jpg" alt="ikon situs">
+                <span class="text-uppercase fw-lighter ms-2">Piring Nusantara</span>
+            </a>
+
+            <div class="order-lg-5 nav-btns py-3 ">
+                <button type="button" class="btn  position-relative">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary"
+                        id="button">5</span>
+                </button>
+                <button type="button" class="btn position-relative ">
+                    <i class="fa fa-heart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary"
+                        id="button">99</span>
+                </button>
+                <button type="button" class="btn position-relative ">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item px-3 py-2">
+                        <a href="#header" class="nav-link text-uppercase text-dark active">Home</a>
+                    </li>
+                    <li class="nav-item px-3 py-2">
+                        <a href="#collection" class="nav-link text-uppercase text-dark">Menu</a>
+                    </li>
+                    <li class="nav-item px-3 py-2">
+                        <a href="#special" class="nav-link text-uppercase text-dark">Merch</a>
+                    </li>
+                    <li class="nav-item px-3 py-2">
+                        <a href="#aboutUs" class="nav-link text-uppercase text-dark">About Us</a>
+                    </li>
+                    <li class="nav-item px-3 py-2 ">
+                        <a href="#contact" class="nav-link text-uppercase text-dark">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <!-- header -->
+    <section id="header">
+        <header class="vh-100 carousel slide" data-bs-ride="carousel style=" padding-top: 104px>
+            <div class="container h-100 d-flex align-items-center carousel-inner">
+                <div class="text-center carousel-item active" id="judul">
+                    <h2 class="text-capitalize text-white">kuliner Nusantara</h2>
+                    <h1 class="text-uppercase py-2 fw-bold text-white">Cita Rasa Nusantara</h1>
+                    <a href="#collection" class="btn mt-3 text-uppercase">Belanja Sekarang</a>
+                </div>
+            </div>
+            <!--
+            <button class="carousel-control-prev" type="button" data-bs-target="#header" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            -->
+        </header>
+    </section>
+    <!-- akhir header -->
+
+
+    <!-- collection -->
+    <section id="collection" class="py-5">
+        <div class="container">
+            <div class="title text-center">
+                <h2 class="position-relative d-inline-block">Our Menu</h2>
+            </div>
+
+            <div class="row g-0">
+
+                <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                    <button type="button" class="btn m-2 text-dark active-filter-btn" data-filter="*">All</button>
+                    <button type="button" class="btn m-2 text-dark" id="filterp" data-filter=".best">Best
+                        Seller</button>
+                    <button type="button" class="btn m-2 text-dark" id="filterp" data-filter=".new">New Arrival</button>
+                    <button type="button" class="btn m-2 text-dark" id="filterp" data-filter=".feat">Featured</button>
+                </div>
+
+                <div class="collection-list mt-5 row gx-0" id="colL">
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-3 feat">
+                        <div class="collection-img">
+                            <img src="aset/produk-klepon.JPG" alt="produk" class="w-100 mt-3 mb-2" id="wer">
+                        </div>
+                        <div class="text-center">
+                            <p class="text-capitalize my-1">Klepon</p>
+                            <span class="fw-bold mb-4">Rp 2.000,00 / pcs</span>
+                            <div class="rating mt-1 mb-2">
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                            </div>
+                            <span><button type="button" class="baten m-2 text-dark">Add to Cart <i
+                                        class="fa fa-shopping-cart"></i></button> <button class="batens dark"> <i
+                                        class="fa fa-heart"></i></button></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-3 feat">
+                        <div class="collection-img">
+                            <img src="aset/produk-darlungaseli.JPG" alt="produk" class="w-100 mt-3 mb-2">
+                        </div>
+                        <div class="text-center">
+                            <p class="text-capitalize my-1">Dadar Gulung</p>
+                            <span class="fw-bold mb-4">Rp 2.000,00 / pcs</span>
+                            <div class="rating mt-1 mb-2">
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                            </div>
+                            <span><button type="button" class="baten m-2 text-dark">Add to Cart <i
+                                        class="fa fa-shopping-cart"></i></button> <button class="batens dark"> <i
+                                        class="fa fa-heart"></i></button></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-3 best">
+                        <div class="collection-img">
+                            <img src="aset/produk-onde.png" alt="produk" class="w-100 mt-3 mb-2">
+                        </div>
+                        <div class="text-center">
+                            <p class="text-capitalize my-1">Onde-Onde</p>
+                            <span class="fw-bold mb-4">Rp 2.000,00 / pcs</span>
+                            <div class="rating mt-1 mb-2">
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                            </div>
+                            <span><button type="button" class="baten m-2 text-dark">Add to Cart <i
+                                        class="fa fa-shopping-cart"></i></button> <button class="batens dark"> <i
+                                        class="fa fa-heart"></i></button></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-3 best">
+                        <div class="collection-img">
+                            <img src="aset/produk-kripik tempe.jpg" alt="produk" class="w-100 mt-3 mb-2">
+                        </div>
+                        <div class="text-center">
+                            <p class="text-capitalize my-1">Keripik Tempe</p>
+                            <span class="fw-bold mb-4">Rp 20.000,00 / kg</span>
+                            <div class="rating mt-1 mb-2">
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                            </div>
+                            <span><button type="button" class="baten m-2 text-dark">Add to Cart <i
+                                        class="fa fa-shopping-cart"></i></button> <button class="batens dark"> <i
+                                        class="fa fa-heart"></i></button></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-3 new">
+                        <div class="collection-img">
+                            <img src="aset/produk-otakotak.jpeg" alt="produk" class="w-100 mt-3 mb-2">
+                        </div>
+                        <div class="text-center">
+                            <p class="text-capitalize my-1">Otak-Otak</p>
+                            <span class="fw-bold mb-4">Rp 5.000,00 / pcs</span>
+                            <div class="rating mt-1 mb-2">
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                            </div>
+                            <span><button type="button" class="baten m-2 text-dark">Add to Cart <i
+                                        class="fa fa-shopping-cart"></i></button> <button class="batens dark"> <i
+                                        class="fa fa-heart"></i></button></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-3 best">
+                        <div class="collection-img">
+                            <img src="aset/produk-risol.jpg" alt="produk" class="w-100 mt-3 mb-2">
+                        </div>
+                        <div class="text-center">
+                            <p class="text-capitalize my-1">Risol</p>
+                            <span class="fw-bold mb-4">Rp 4.000,00 / pcs</span>
+                            <div class="rating mt-1 mb-2">
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                            </div>
+                            <span><button type="button" class="baten m-2 text-dark">Add to Cart <i
+                                        class="fa fa-shopping-cart"></i></button> <button class="batens dark"> <i
+                                        class="fa fa-heart"></i></button></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-3 new">
+                        <div class="collection-img">
+                            <img src="aset/produk-lumpia.jpg" alt="produk" class="w-100 mt-3 mb-2">
+                        </div>
+                        <div class="text-center">
+                            <p class="text-capitalize my-1">Lumpia</p>
+                            <span class="fw-bold mb-4">Rp 4.000,00 / pcs</span>
+                            <div class="rating mt-1 mb-2">
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                            </div>
+                            <span><button type="button" class="baten m-2 text-dark">Add to Cart <i
+                                        class="fa fa-shopping-cart"></i></button> <button class="batens dark"> <i
+                                        class="fa fa-heart"></i></button></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-3 best">
+                        <div class="collection-img">
+                            <img src="aset/produk-kripik pisang.jpg" alt="produk" class="w-100 mt-3 mb-2">
+                        </div>
+                        <div class="text-center">
+                            <p class="text-capitalize my-1">Keripik Pisang</p>
+                            <span class="fw-bold mb-4">Rp 24.000,00 / kg</span>
+                            <div class="rating mt-1 mb-2">
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                            </div>
+                            <span><button type="button" class="baten m-2 text-dark">Add to Cart <i
+                                        class="fa fa-shopping-cart"></i></button> <button class="batens dark"> <i
+                                        class="fa fa-heart"></i></button></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+    <!-- akhir collection -->
+
+    <!-- merchandise -->
+    <section id="special" class="py-0">
+        <div class="container">
+            <div class="title text-center py-5  ">
+                <h2 class="position-relative d-inline-block">Our Merchandise</h2>
+            </div>
+
+            <div class="special-list row gx-0">
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="aset/merch-baju (1).png" alt="" class="w-100">
+                        <span class=""></span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">T-Shirt</p>
+                        <span class="fw-bold d-block">Rp 25.000,00</span>
+                        <span><button type="button" class="baten m-2 text-dark">Add to Cart <i
+                                    class="fa fa-shopping-cart"></i></button> <button class="batens dark"> <i
+                                    class="fa fa-heart"></i></button></span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="aset/merch-market bag .png" alt="" class="w-100">
+                        <span class=""></span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Market Bag</p>
+                        <span class="fw-bold d-block">Rp 15.000,00</span>
+                        <span><button type="button" class="baten m-2 text-dark">Add to Cart <i
+                                    class="fa fa-shopping-cart"></i></button> <button class="batens dark"> <i
+                                    class="fa fa-heart"></i></button></span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="aset/merch-piring.png" alt="" class="w-100">
+                        <span class=""></span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Food Plate</p>
+                        <span class="fw-bold d-block">Rp 10.000,00</span>
+                        <span><button type="button" class="baten m-2 text-dark">Add to Cart <i
+                                    class="fa fa-shopping-cart"></i></button> <button class="batens dark"> <i
+                                    class="fa fa-heart"></i></button></span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="aset/merch-jamdinding.png" alt="" class="w-100">
+                        <span class=""></span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Wall Clock</p>
+                        <span class="fw-bold d-block">Rp 25.000,00</span>
+                        <span><button type="button" class="baten m-2 text-dark">Add to Cart <i
+                                    class="fa fa-shopping-cart"></i></button> <button class="batens dark"> <i
+                                    class="fa fa-heart"></i></button></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="" id="aboutUs">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="lc-block">
+                        <img class="img-fluid" src="aset/typography_style_logo_for_Piring_Nusantara_a_.jpg">
+                    </div><!-- /lc-block -->
+                </div><!-- /col -->
+                <div class="col-md-6">
+                    <div class="lc-block mb-5">
+                        <div editable="rich">
+                            <h1 class="fw-bold display-2" id="pui">About Us</h1>
+                        </div>
+                    </div><!-- /lc-block -->
+                    <div class="lc-block">
+                        <div editable="rich">
+                            <p class="papp">Selamat datang di Piring Nusantara, tempat di mana cita rasa Indonesia
+                                menggoda lidah Anda. Sebagai pelopor UMKM yang menawarkan makanan tradisional Indonesia,
+                                kami berkomitmen untuk memperkenalkan kelezatan kuliner Nusantara kepada seluruh dunia.
+                            </p>
+                            <p class="papp">Setiap hidangan kami dipersembahkan dengan cinta dan keahlian, menghadirkan
+                                sentuhan autentik dan warisan budaya dalam setiap gigitan. Piring Nusantara bukan hanya
+                                tempat untuk menikmati hidangan lezat, tetapi juga sebuah perjalanan rasa yang mengajak
+                                Anda menjelajahi kekayaan kuliner Indonesia. Bergabunglah dengan kami dan nikmati
+                                pengalaman kuliner yang memikat, di mana tradisi dan inovasi bersatu dalam sebuah
+                                piring. Selamat menikmati kelezatan Nusantara!
+                                <br>
+                            </p>
+                        </div>
+                    </div><!-- /lc-block -->
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <section class="py-0 mt-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="p-md-5 mb-2 lc-block  text-center">
+                            <div class="lc-block title  mb-5">
+                                <div editable="rich" class="teamm">
+                                    <h2 class="position-relative d-inline-block">Our Team</h2>
+                                </div>
+                            </div>
+                            <div class="lc-block mb-5">
+                                <div editable="rich">
+                                    <h1 class="mt-5">People Who Have a Great Dedication to
+                                        Our Company
+                                    </h1>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div><!-- /col -->
+                </div>
+            </div>
+            <div class="container-fluid" style="max-width:1920px">
+                <div class="row row-cols-1 row-cols-lg-3 mb-5">
+                    <div class="col text-center">
+                        <div class="lc-block mb-4">
+                            <img class="img-fluid" id="img-fluid" src="aset/Sultan.jpeg" lc-helper="image">
+                        </div><!-- /lc-block -->
+                        <div class="lc-block">
+                            <div editable="rich">
+
+                                <h3>Sultan Syaeful Millah</h3>
+                                <p class="text-muted mb-1">Chief Code Innovation Officer</p>
+                                <p class="text-muted">Ketua Kelompok</p>
+
+                            </div>
+                        </div>
+                        <!-- /lc-block -->
+                    </div>
+                    <div class="col text-center">
+                        <div class="lc-block mb-4">
+                            <img class="img-fluid" id="img-fluid"
+                                src="aset/Mauby Purnama Aprilianto ( Koordinator Umum ).jpg" lc-helper="image">
+                        </div><!-- /lc-block -->
+                        <div class="lc-block">
+                            <div editable="rich">
+
+                                <h3>Mauby Purnama Aprilianto</h3>
+                                <p class="text-muted mb-1">Algorithm Maestro</p>
+                                <p class="text-muted">Anggota 1</p>
+
+                            </div>
+                        </div>
+                        <!-- /lc-block -->
+                    </div>
+                    <div class="col text-center">
+                        <div class="lc-block mb-4">
+                            <img class="img-fluid" id="img-fluid" src="aset/Syehan.jpg" lc-helper="image">
+                        </div><!-- /lc-block -->
+                        <div class="lc-block">
+                            <div editable="rich">
+
+                                <h3>Syehan Safaril Mujib</h3>
+                                <p class="text-muted mb-1">Code Quality Supervisor</p>
+                                <p class="text-muted">Anggota 2</p>
+
+                            </div>
+                        </div>
+                        <!-- /lc-block -->
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- End of About Us -->
+
+        <!-- Contact -->
+
+        <!--Section: Contact v.2-->
+        <section class="mb-4 p-5" id="contact">
+
+            <!--Section heading-->
+            <div class="title text-center">
+                <h2 class="position-relative d-inline-block mb-5">Contact Us</h2>
+            </div>
+            <!--Section description-->
+
+
+            <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-9 mb-md-0 mb-5 p-5 mx-auto">
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                        <!--Grid row-->
+                        <div class="col">
+
+                            <!--Grid column-->
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" name="name" class="form-control">
+
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <label for="email">Your Email</label>
+                                    <input type="text" id="email" name="email" class="form-control">
+
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                        </div>
+                        <!--Grid row-->
+
+                        <!--Grid row-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" id="subject" name="subject" class="form-control">
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid row-->
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-12">
+
+                                <div class="md-form">
+                                    <label for="message">Your Message</label>
+                                    <textarea type="text" id="message" name="message" rows="6"
+                                        class="form-control md-textarea"></textarea>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--Grid row-->
+
+                    </form>
+
+                    <div class="sumbit-contact  py-3">
+                        <a class="btn btn-contact">Send</a>
+                    </div>
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+
+
+            <div class="container-fluid g-0 mb-0">
+                <div class="row g-0">
+                    <div class="col-md-12">
+                        <div class="lc-block overflow-hidden">
+                            <div style="max-height:45vh" class="ratio ratio-1x1" lc-helper="gmap-embed">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15827.409761413372!2d108.5270141!3d-7.3704311!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f637c6dac081d%3A0x4ad442ab5a695f4b!2sSMK%20Negeri%201%20Banjar!5e0!3m2!1sid!2sid!4v1703824590557!5m2!1sid!2sid"
+                                    width="500" height="200" style="border: 1px solid rgba(0, 0, 0, 0.442);"
+                                    allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+ 
+
+
+        <!-- Footer -->
+        <footer class="text-center text-lg-start  text-muted">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-1 border-bottom">
+
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5" style="background-color: #fff;">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4" style="border-bottom: 2px solid gray;">
+                                Piring Nusantara
+                            </h6>
+                            <p style="font-size: 13px;">
+                                Piring Nusantara merupakan wadah bagi para UKM makanan dan oleh-oleh di seluruh
+                                Indonesia
+                                untuk menjual produk-produk mereka secara online.
+
+
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4" style="border-bottom: 2px solid gray;">
+                                Hubungi Kami
+                            </h6>
+                            <p style="font-size: 13px;">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Jl. KH. Mustofa Lingk. Parunglesang, RT.05/RW.10, Banjar, Kec. Banjar, Kota Banjar, Jawa
+                                Barat 46311
+                                <a href="#!" class="text-reset" id="paop">smkn1banjar@gmail.com</a>
+                            </p>
+                            <p style="font-size: 13px;">
+                                <i class="fa-solid fa-phone"></i>
+                                Whatsapp:<a href="#!" class="text-reset" id="paop"> +62 895-0263-2801</a>
+                                (message only)
+                            </p>
+                            <p style="font-size: 13px;">
+                                <i class="fas fa-envelope"></i>
+                                Email : <a href="" class="text-reset" id="paop">shineggod@gmail.com</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4 justify-content-center "
+                                style="border-bottom: 2px solid gray;">
+                                Quick links
+                            </h6>
+                            <p>
+                                <a href="#home" class="text-reset" id="paop">Home</a>
+                            </p>
+                            <p>
+                                <a href="#collection" class="text-reset" id="paop">Menu</a>
+                            </p>
+                            <p>
+                                <a href="#special" class="text-reset" id="paop">Merch</a>
+                            </p>
+                            <p>
+                                <a href="#aboutUs" class="text-reset" id="paop">About US</a>
+                            </p>
+                            <p>
+                                <a href="#contact" class="text-reset" id="paop">Contact</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4" style="border-bottom: 2px solid gray;">Follow Us!
+                            </h6>
+                            <p><i class="fa-brands fa-instagram me-3"></i><a id="paop">@kesaltunan</a></p>
+                            <p><i class="fa-brands fa-instagram me-3"></i><a id="paop">@maubyaprll</a></p>
+                            <p><i class="fa-brands fa-instagram me-3"></i><a id="paop">@syehan._.27</a></p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                © Created by <span style="color: #56f04e;">Team CTRL + C Club</span> All Right Reserved.
+            </div>
+            <!-- Akhir Copyright -->
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- jquery -->
+        <script src="jquery-3.7.1.js"></script>
+        <!-- isotope -->
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+        <!-- js kustom -->
+        <script src="jaoa.js"></script>
+        <!-- bootstrap js -->
+        <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
