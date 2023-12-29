@@ -247,6 +247,23 @@ body {
     aspect-ratio: 9 / 16;
 }
 
+.iop{
+    width: 10px;
+    height: 100px;
+}
+
+#map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto; /* Menyusun peta di tengah secara horizontal */
+}
+
+#map-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
 
 
 
